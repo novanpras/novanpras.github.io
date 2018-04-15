@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Site
 title:          JBlog
 bio:            'Just a simple Jekyll theme'
@@ -12,64 +11,6 @@ url:            https://alperenbozkurt.github.io/JBlog
 permalink:      /:title/
 markdown:       kramdown
 highlighter:    rouge
-=======
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
-name: NovanPras
-
-# Short bio or description (displayed in the header)
-description: Personal Blog for Sharing
-
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: novanpras0@gmail.com
-  facebook:
-  flickr:
-  github: novanpras
-  instagram:
-  linkedin: 
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/3807565/akshay"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://akshayagarwal007.github.io)
-# Used for Sitemap.xml and your RSS feed
-url: "http://novanpras.github.io"
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# Jekyll 3 now only supports Kramdown for Markdown
->>>>>>> 49b37fcfe7bf569f4be28df6b98aa1cd8abd1e92
 kramdown:
   auto_ids: true
   footnote_nr: 1
@@ -130,15 +71,5 @@ gems:
 jekyll-mentions:
     base_url: https://github.com
 
-<<<<<<< HEAD
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
-=======
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
->>>>>>> 49b37fcfe7bf569f4be28df6b98aa1cd8abd1e92
