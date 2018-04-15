@@ -2,45 +2,48 @@
 layout: compress
 ---
 
-<!-- Include Data Base  -->
-{% include liquid/data %}
-
-
-{% if site.maintenance.enable == true %}
-
-  {% include maintenance.html %}
-
-{% else %}
-
 <!DOCTYPE html>
 <html>
-  {% include partials/head.html %}
-<body id="top">
+{% include head.html %}
 
-  <div class="layout_default layout_default__bg">
+<body>
+   <div class="container">
+       
+    {% include sidebar.html %}
 
-    <div class="container layout_default__container">
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->   
+        <div id="main">
 
-      <div class="row">
-
-        <div class="p-0 col-lg-3 sidebar sidebar__bg">
-          {% include partials/sidebar.html %}
+             {% include header.html %}
+                    <div class="page-content">
+                        <div class="wrapper">
+                            {{ content }}
+                        </div>
+                    {% include footer.html %}
+                    </div>
+                {% if site.analytics %}
+                    {% include analytics.html %}
+                {% endif %}  
         </div>
+        
+        
+        
+        
+        
+<script>
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
 
-        <div class="pt-4 pt-lg-0 col-lg-9 border-l-dashed border-r-dashed layout_default__content">
-          {{ content }}
-        </div>
-
-      </div>
-
-    </div>
-
-
-  </div>
-
-  {% include partials/footer.html %}
-  {% include partials/scripts/default.html %}
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+        
+        
+</div>            
+        
 </body>
 </html>
-
-{% endif %}
